@@ -1,0 +1,176 @@
+@import "./mobile.scss";
+@media (min-width: 896px) {
+  body {
+    margin: 0%;
+    nav {
+      display: flex;
+      justify-content: space-between;
+      .primerbloque {
+        display: flex;
+        justify-content: space-between;
+      }
+      #botonmenu,
+      #cruz,
+      #hamburguesa {
+        display: none;
+      }
+      .menu {
+        color: $color-primary;
+        display: flex;
+          li{
+            list-style: none;
+            margin: 20px;
+              a{
+                text-decoration: none;
+                &:hover{
+                  color: $color-cuadrado;
+                  text-decoration-line: line-through;
+                  }
+                &:active{
+                  color:grey;
+                  text-decoration-line: line-through;
+                  }
+              }
+          }
+      }
+    }
+    .bloqueuno {
+      margin: 5%;
+      .primero {
+        flex-direction: row;
+        .titulo {
+          font-size: 60px;
+        }
+      }
+      .texto1 {
+        display: none;
+      }
+      .texto1-1 {
+        display: block;
+        font-size: 14px;
+        margin: 4% 2%;
+        width: 595px;
+      }
+    }
+    .fondo {
+      height: 1300px;
+      margin-top: 0%;
+    }
+    .episodios {
+      h2 {
+        font-size: 45px;
+        margin-left: 10%;
+        margin-top: 8%;
+      }
+
+    .spotify {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 50% 50% 70px;
+      justify-content: space-between;
+      margin: 3%;
+      iframe {
+        height: 232px;
+        margin: 10%;
+        width: 550px;
+        }
+      }
+    }
+    .telefono {
+      display: flex;
+      margin-left: 10%;
+      .phone {
+        width: 30%;
+      }
+      .textphone {
+        padding: 8%;
+        width: 30%;
+        margin: 5%;
+        .donde {
+          display: flex;
+          margin: 0%;
+          #nos1{
+            font-size: 45px;
+          }
+          #nos2 {
+            font-size:45px;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    #entrevistas {
+      display: flex;
+      margin-left: 10%;
+      #inv1{
+        font-size: 45px;
+      }
+      #inv2 {
+        font-size: 45px;
+        margin-left: 10px;
+      }
+    }
+    .img-invitadas {
+      display: flex;
+      flex-flow: wrap;
+      img {
+        width: 33.3%;
+      }
+    }
+    .topicos {
+      display: flex;
+      margin: 3%;
+      #top1{
+        font-size: 45px;
+      }
+      #top2{
+        font-size: 45px;
+        margin-left: 10px;
+      }
+    }
+    .img-temas {
+      display: flex;
+      justify-content: space-around;
+      margin: 7%;
+      div {
+        margin: 0%;
+      }
+    }
+    .fondo2 {
+      height: 598px;
+      width: 100%;
+    }
+    .ultimasnovedades {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 15%;
+      .novedades {
+        font-size: 45px;
+        margin: 0%;
+        margin-left: 10px;
+      }
+    }
+    #cuadrado2 {
+      margin-left: 42%;
+      width: 310px;
+    }
+    footer{
+      align-items: flex-end;
+      display: flex;
+      flex-direction: row;
+      height: 155px;
+      justify-content: space-between;
+      .foot1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 15px;
+        }
+        .font{
+          letter-spacing: 20px;
+          margin: 20px;
+        }
+    }
+  }
+}
